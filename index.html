@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://kenwheeler.github.io/slick/slick/slick-theme.css" />
+  
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="tab-content-slider-container">
+        <div class="tabs">
+          <div class="tab" data-tab="0">Tab A</div>
+          <div class="tab" data-tab="1">Tab B</div>
+          <div class="tab" data-tab="2">Tab C</div>
+        </div>
+        <div class="tab-content-slider">
+        <div class="sliders">
+          <!-- {% assign Slide_blocks = section.blocks | where: 'type', 'slide-one' %}
+              {% for block in Slide_blocks %} -->
+          <div class="slide-box" data-slider='0'>
+             <div class="slider-img">
+              <img src="https://cdn.shopify.com/s/files/1/0568/1007/8283/files/nat-8.jpg?v=1727852228">
+            </div>
+            <div class="slider-img">
+               <img src="https://cdn.shopify.com/s/files/1/0568/1007/8283/files/nat-8.jpg?v=1727852228">
+            </div>
+          </div>
+          <!-- {% endfor %}
+           {% assign Slide_blocks = section.blocks | where: 'type', 'slide-two' %}
+              {% for block in Slide_blocks %} -->
+          <div class="slide-box"  data-slider='1'>
+             <div class="slider-img">
+              <img src="https://cdn.shopify.com/s/files/1/0568/1007/8283/files/nat-8.jpg?v=1727852228">
+            </div>
+            <div class="slider-img">
+               <img src="https://cdn.shopify.com/s/files/1/0568/1007/8283/files/nat-8.jpg?v=1727852228">
+            </div>
+          </div>
+                <!-- {% endfor %}
+           {% assign Slide_blocks = section.blocks | where: 'type', 'slide-three' %}
+              {% for block in Slide_blocks %} -->
+          <div class="slide-box"  data-slider='2'>
+             <div class="slider-img"> 
+              <img src="https://cdn.shopify.com/s/files/1/0568/1007/8283/files/nat-8.jpg?v=1727852228">
+            </div>
+            <div class="slider-img" >
+               <img src="https://cdn.shopify.com/s/files/1/0568/1007/8283/files/emmanuel-denier-YiXsjwJKXmo-unsplash.jpg?v=1727852166">
+            </div>
+          </div> 
+                <!-- {% endfor %} -->
+        </div>
+           <button id="left"><i class="fa-solid fa-chevron-left"></i></button>
+          <button id="right"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+        </div>
+        
+        
+        <script src="script.js"></script>
+        
+        <!-- {% schema %}
+          {
+            "name": "Tab Slick Slider",
+            "settings": [],
+            "blocks": [
+              {
+                "type": "slide-one",
+                "name": "Slide One",
+                "settings": [
+                  {
+                    "type": "image_picker",
+                      "id": "img",
+                      "label": "Image",
+                  },
+                  {
+                    "type": "image_picker",
+                    "id": "img2",
+                     "label": "Image"
+                  }
+                ]
+              },
+              {
+                "type": "slide-two",
+                  "name" : "Slide Two",
+                "settings": [
+                  {
+                    "type": "image_picker",
+                      "id": "img3",
+                      "label": "Image",
+                  },
+                  {
+                    "type": "image_picker",
+                      "id": "img4",
+                      "label": "Image",
+                  }
+                ]
+              },
+              {
+                "type": "slide-three",
+                  "name" : "Slide Three",
+                "settings": [
+                  {
+                    "type": "image_picker",
+                      "id": "img5",
+                      "label": "Image",
+                  },
+                  {
+                    "type": "image_picker",
+                      "id": "img6",
+                      "label": "Image",
+                  }
+                ]
+              },
+            ],
+            "presets": [
+              {
+                "name": "Tab Slick Slider"
+              }
+            ]
+          }
+        {% endschema %} -->
+    
+</body>
+</html>

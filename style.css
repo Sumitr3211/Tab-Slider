@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tabs {
+    padding-left: 32px;
+    display: flex;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.tab {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tab.active {
+  border-bottom: 2px solid red;
+}
+
+.slide-box {
+    display: flex !important;
+    gap: 10px;
+    margin: 0 5px;
+}
+
+.sliders .slick-track
+{
+    display: flex !important;
+}
+
+.sliders .slick-slide
+{
+    height: auto !important;
+}
+
+.slide-box .slider-img {
+    height: auto;
+}
+
+.slick-slide img {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.slick-list{padding:0 2% 0 2% !important;}
+
+.tab-content-slider button {
+    background: none;
+    border: none;
+    padding: 15px;
+}
+
+button#left {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    background: #ddd;
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+}
+button#right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 6px;
+    background: #ddd;
+    border-radius: 50%;
+    color: #000;
+    cursor: pointer;
+}
+
+.tab-content-slider {
+    position: relative;
+}
+
+.tab-content-slider button i {
+    font-size: 16px;
+}
